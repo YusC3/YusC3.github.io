@@ -1,13 +1,21 @@
-body {
-  background-color: #E6E6FA
+/* Just a comment */
+/* :) */
+.blog-home {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+}
+
+.wrapper{
+    background-color: #E6E6FA
 }
 
 #title {
-    color: red;
     font-weight: bold;
 }
 
 #yusuf_img {
-max-width: 100%;
+max-width: 20%;
 height: auto;
 }

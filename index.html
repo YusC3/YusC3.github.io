@@ -5,25 +5,77 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="blog-home">
     <div class="wrapper">
-      <h1 id="title" title="...to a place of wonder...">Welcome</h1>
-      <p> Hello all and welcome to my official Github blog page :) <br>Feel free to check out some of my featured projects in the links below!</p>
+      <div id="site-header" class="container">
+        <h1 class="title" title="Yusuf's GitHub Page">Welcome</h1>
+        <h3> Hello all and welcome to my official Github blog page :) <br>Feel free to check out some of my featured projects in the links below!</h3>
+      </div>
+      <div id="projects" class="container">
+        <div class="projects-header">
+          <h2> Featured Projects</h2>
+        </div>
+        <div class="project-post">
+          <div class="post">
+            <article id="post-01" class="post-01 database-comparison">
+              <div class="post-title">
+                <h3>Database Comparison</h3>
+              </div>
+              <div class="post-img">
+                <!-- Place image here -->
+                <a href="https://github.com/YusC3/Database_Comparison">
+                  <img width="100px" height="100px" src="img/uw_project_database_comparison.jfif" alt="University of Wahington Logo"
+                  sizes="(max-width: 100px) 100vw, 100px">
+                </a>
+              </div>
+              <div class="post-content">
+                <p>This is one of my first, full scale projects (using version control, a database, multiple editors, ect...) I did in my years in undergrad at the University of Washington (Bothell).
+                The goal was to create a Python script (in Jupyter Notebooks) that could look for and compare different genes
+                that were expressed for a microbial sample.</p>
+              </div>
+            </article>
+          </div>
+          <div class="post">
+            <article id="post-02" class="post-02 fun-codes">
+              <div class="post-title">
+                <h3>Fun Code</h3>
+              </div>
+              <div class="post-img">
+                <a href="https://github.com/YusC3/Fun_Codes">
+                  <img width="100px" height="100px" src="img/TrollFace.jpg" alt="Troll Face"
+                  sizes="(max-width: 100px) 100vw, 100px">
+                </a>
+              </div>
+              <div class="post-content">
+                <p>Here I keep a bunch of code project I wrote, largely in part to learn, but also to have fun :). Feel free to take a look and even download and improve them!
+                You can also run and play a couple of them as actual games!</p>
+              </div>
+            </article>
+          </div>
+          <div class="post">
+            <article id="post-03" class="post-03 tree-to-matrix">
+              <div class="post-title">
+                <h3>Tree-To-Matrix</h3>
+              </div>
+              <div class="post-img">
+                <a href="https://github.com/YusC3/Tree-To-Matrix">
+                  <img width="100px" height="100px" src="" alt="NEED AN IMAGE"
+                  sizes="(max-width: 100px) 100vw, 100px">
+                </a>
+              </div>
+              <div class="post-content">
+                <p>This was my very first coding project that worked on in collaboration with some classmates. Though it was incomplete, I thought I'd upload it as a documentation of my progress at the time.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="about-me">
+          <h2> About Me </h2>
+          <!-- IMAGE -->
+          <img id="yusuf_img" src="img/Your_Editor.jpg" alt="Yusuf Corr">
+          <p> This is my about me section</p>
+        </div>
+      </div>
     </div>
-    <section id="projects">
-      <h2> Featured Projects</h2>
-        <!-- IMAGE -->
-        <a href="https://github.com/YusC3/Database_Comparison"> Database Comparison Extension</a>
-        <!-- IMAGE -->
-        <a href="https://github.com/YusC3/Fun_Codes"> Fun Codes</a>
-        <!-- IMAGE -->
-        <a href="https://github.com/YusC3/Tree-To-Matrix"> Tree-to-Matrix</a>
-    </section>
-    <section id="aboutMe">
-      <h2> About Me </h2>
-      <!-- IMAGE -->
-      <img id="yusuf_img" src="img/Your_Editor.jpg" alt="Yusuf Corr">
-      <p> This is my about me section</p>
-    </section>
   </body>
 </html>
