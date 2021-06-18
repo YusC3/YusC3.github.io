@@ -8,7 +8,16 @@
 }
 
 .wrapper{
-    background-color: #E6E6FA
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
+
+.article-margin{
+  border-style: solid;
+  border-color: grey;
+  border-width: 10px;
+  text-align: center;
 }
 
 #title {
@@ -18,4 +27,11 @@
 #yusuf_img {
 max-width: 20%;
 height: auto;
+}
+
+#site-header{
+  border-style: solid;
+  background-color: #E6E6FA;
+  border-width: 10px;
+  text-align: center;
 }
