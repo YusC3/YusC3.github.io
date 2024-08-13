@@ -1,81 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Yusuf's Github Page</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="blog-home">
-    <div class="wrapper site-margin">
-      <div id="site-header" class="container">
-        <h1 class="title" title="Yusuf's GitHub Page">Welcome</h1>
-        <h3> Hello all and welcome to my official Github blog page :) <br>Feel free to check out some of my featured projects in the links below!</h3>
-      </div>
-      <div id="projects" class="container">
-        <div class="projects-header">
-          <h2> Featured Projects</h2>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Yusuf Corr</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="project-post">
-          <div class="post">
-            <article id="post-01" class="post-01 article-margin">
-              <div class="post-title">
-                <h3>Database Comparison</h3>
-              </div>
-              <div class="post-img">
-                <!-- Place image here -->
-                <a href="https://github.com/YusC3/Database_Comparison">
-                  <img width="100px" height="100px" src="img/uw_project_database_comparison.jfif" alt="University of Wahington Logo"
-                  sizes="(max-width: 100px) 100vw, 100px">
-                </a>
-              </div>
-              <div class="post-content">
-                <p>This is one of my first, full scale projects (using version control, a database, multiple editors, ect...) I did in my years in undergrad at the University of Washington (Bothell).
-                The goal was to create a Python script (in Jupyter Notebooks) that could look for and compare different genes
-                that were expressed for a microbial sample.</p>
-              </div>
-            </article>
-          </div>
-          <div class="post">
-            <article id="post-02" class="post-02 article-margin">
-              <div class="post-title">
-                <h3>Fun Code</h3>
-              </div>
-              <div class="post-img">
-                <a href="https://github.com/YusC3/Fun_Codes">
-                  <img width="100px" height="100px" src="img/TrollFace.jpg" alt="Troll Face"
-                  sizes="(max-width: 100px) 100vw, 100px">
-                </a>
-              </div>
-              <div class="post-content">
-                <p>Here I keep a bunch of code project I wrote, largely in part to learn, but also to have fun :). Feel free to take a look and even download and improve them!
-                You can also run and play a couple of them as actual games!</p>
-              </div>
-            </article>
-          </div>
-          <div class="post">
-            <article id="post-03" class="post-03 article-margin">
-              <div class="post-title">
-                <h3>Tree-To-Matrix</h3>
-              </div>
-              <div class="post-img">
-                <a href="https://github.com/YusC3/Tree-To-Matrix">
-                  <img width="100px" height="100px" src="" alt="NEED AN IMAGE"
-                  sizes="(max-width: 100px) 100vw, 100px">
-                </a>
-              </div>
-              <div class="post-content">
-                <p>This was my very first coding project that worked on in collaboration with some classmates. Though it was incomplete, I thought I'd upload it as a documentation of my progress at the time.</p>
-              </div>
-            </article>
-          </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yusuf Corr</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="about-me">
-          <h2> About Me </h2>
-          <!-- IMAGE -->
-          <img id="yusuf_img" src="img/Your_Editor.jpg" alt="Yusuf Corr">
-          <p> This is my about me section</p>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-pic" src="./assets/1660757135589.jpg" alt="Yusuf Corr profile picture."/>
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Yusuf Corr</h1>
+            <p class="section__text__p2">Front-End Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedIn.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yusuf-corr/'">
+                <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/YusC3'">
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>
