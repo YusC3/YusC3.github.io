@@ -16,7 +16,6 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,7 +31,6 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -40,22 +38,74 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img class="profile-pic" src="./assets/1660757135589.jpg" alt="Yusuf Corr profile picture."/>
+            <img class="profile-pic" src="./assets/profile_picture-modified.png" alt="Yusuf Corr profile picture."/>
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Yusuf Corr</h1>
-            <p class="section__text__p2">Front-End Developer</p>
+            <p class="section__text__p2">Back-End & Cloud Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedIn.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yusuf-corr/'">
-                <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/YusC3'">
+                <img src="./assets/linkedIn-logo.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yusuf-corr/'">
+                <img src="./assets/github-logo.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/YusC3'">
             </div>
         </div>
-        
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img class="about-pic" src="./assets/about_me.jpg" alt="About me profile picture" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img class="icon" src="./assets/badge.png" alt="Experience icon" />
+                        <h3>Experience</h3>
+                        <p>4+ years - Back-End Development<br />3+ years - Azure Cloud</p>
+                    </div>
+                    <div class="details-containers">
+                        <img class="icon" src="./assets/apple.png" alt="Apple icon" />
+                        <h3>Education</h3>
+                        <p>Pursuing 2024 - M. Sc. Computer Science<br />Awarded 2019 - B. Sc. Biology - UW</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus soluta unde quod, harum corrupti atque totam debitis ipsam asperiores molestias voluptates, inventore ullam! Quidem blanditiis a tempora voluptas porro.</p>
+                </div>
+            </div>
+        </div>
+        <img class="icon arrow" src="./assets/arrow.png" alt="Arrow icon" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="section-container">
+            <div class="project-containers">
+                <div class="project-container">
+                    <img class="project-pic" src="./assets/project_1.png" alt="AI Generated robot scheduling on a calendar"/>
+                    <h1>AI Assist</h1>
+                    <p>Hack Together 2023 Project</p>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/guanryan1234/Hacktogether-2023'">Github</button>
+                </div>
+                <div class="project-container">
+                    <img class="project-pic" src="./assets/openai-logo.png" alt="OpenAI logo"/>
+                    <h1>Standard.AI.OpenAI</h1>
+                    <p>Open-source C# Library for OpenAI APIs</p>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/hassanhabib/Standard.AI.OpenAI'">Github</button>
+                </div>
+                <div class="project-container">
+                    <img class="project-pic" src="./assets/project_2.png" alt="AI Generated tree sitting on a table"/>
+                    <h1>Tree To Matrix</h1>
+                    <p>Capstone project for UW B. Sc. Degree</p>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/YusC3/Tree-To-Matrix/blob'">Github</button>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
