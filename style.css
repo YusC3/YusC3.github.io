@@ -321,20 +321,24 @@ section {
 }
 
 .project-containers {
+    gap: 2.3rem;
     justify-content: center;
     display: flex;
-    flex-direction: column;
 }
 
 .project-pic {
     border-radius: 2rem;
-    height: 90%;
+    height: 60%;
     width: 90%;
 }
 
 .project-container {
+    padding-top: 2%;
+    text-align: center;
+    flex-direction: column;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
+    border-radius: 2rem;
 }
 
 /* CONTACT SECTION */
